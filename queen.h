@@ -3,6 +3,6 @@
 
 class Queen : public Role {
 public:
-    void work(Ant* ant) override {} // Матка ничего не делает
+    void work(Ant* ant) override {}
     std::string getName() const override { return "Матка"; }
 };

@@ -10,7 +10,7 @@ class Ant {
 private:
     int age;
     int health;
-    int soldierLevel = 0;  // Добавляем поле для уровня солдата
+    int soldierLevel = 0;
     Role* role;
     Colony* colony;
 
@@ -27,9 +27,9 @@ public:
     Colony* getColony() const { return colony; }
     
     void reduceHealth(int amount);
-    void die();  // Метод для смерти
-    int getAge() const { return age; }  // Геттер для возраста
-    int getHealth() const { return health; }  // Геттер для здоровья
+    void die();
+    int getAge() const { return age; }
+    int getHealth() const { return health; }
     void setHealth(int h) { health = h; }
     std::string getRoleName() const {
         return role ? role->getName() : "Без роли";

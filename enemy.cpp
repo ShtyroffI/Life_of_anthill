@@ -6,7 +6,7 @@
 
 Enemy::Enemy() {
     std::srand(static_cast<unsigned int>(std::time(nullptr)));
-    level = 1 + std::rand() % 5; // уровень врага от 1 до 5
+    level = 1 + std::rand() % 10; // уровень врага от 1 до 10
 }
 
 int Enemy::getLevel() const {

@@ -49,20 +49,4 @@ void Ant::reduceHealth(int amount) {
 
 void Ant::die() {
     std::cout << "Муравей умер от старости или нехватки здоровья.\n";
-    // Логика для удаления муравья из колонии (если необходимо)
-}
-
-void Ant::increaseSoldierLevel(int amount) {
-    soldierLevel += amount;
-    if (soldierLevel >= 7 && dynamic_cast<NoRole*>(role)) {
-        // Случайный выбор: 25% солдат, 75% фермер
-        int r = std::rand() % 100;
-        if (r < 25) {
-            setRole(new Soldier());
-            std::cout << "Муравей стал Солдатом!\n";
-        } else {
-            setRole(new Farmer());
-            std::cout << "Муравей стал Фермером!\n";
-        }
-    }
 }
