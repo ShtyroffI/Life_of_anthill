@@ -1,0 +1,30 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "build and run",
+        "type": "shell",
+        "command": "g++",
+        "args": [
+          "-std=c++17",
+          "main.cpp",
+          "ant.cpp",
+          "role.cpp",
+          "colony.cpp",
+          "-o", "Life_of_anthill"
+        ],
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "problemMatcher": ["$gcc"],
+        "detail": "Компиляция и запуск программы"
+      },
+      {
+        "label": "run",
+        "type": "shell",
+        "command": "./Life_of_anthill",
+        "problemMatcher": []
+      }
+    ]
+  }

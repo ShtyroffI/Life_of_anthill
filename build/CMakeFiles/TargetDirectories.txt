@@ -1,0 +1,3 @@
+/Users/ivan/Desktop/Life_of_anthill/build/CMakeFiles/Life_of_anthill.dir
+/Users/ivan/Desktop/Life_of_anthill/build/CMakeFiles/edit_cache.dir
+/Users/ivan/Desktop/Life_of_anthill/build/CMakeFiles/rebuild_cache.dir
